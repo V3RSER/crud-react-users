@@ -16,12 +16,18 @@ const TablaUsuario = (props) => {
       </thead>
       <tbody>
         {props.usuarios.length > 0 ? (
-          props.usuarios.map((user) => (
-            <tr key={user.id}>
-              <td className="align-middle">{user.nombre}</td>
-              <td className="align-middle">{user.nombreUsuario}</td>
+          props.usuarios.map((usuario) => (
+            <tr key={usuario.id}>
+              <td className="align-middle">{usuario.nombre}</td>
+              <td className="align-middle">{usuario.nombreUsuario}</td>
               <td className="text-center">
-                <button type="button" className="btn btn-primary m-1">
+                <button
+                  type="button"
+                  className="btn btn-primary m-1"
+                  onClick={() => {
+                    props.botonEditar(usuario);
+                  }}
+                >
                   Editar
                 </button>
                 <button type="button" className="btn btn-danger m-1">
