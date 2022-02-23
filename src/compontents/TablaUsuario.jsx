@@ -10,7 +10,7 @@ const TablaUsuario = (props) => {
       <thead>
         <tr>
           <th className="text-center">Nombre</th>
-          <th className="text-center">Usuario</th>
+          <th className="text-center">Nombre de usuario</th>
           <th className="text-center">Acciones</th>
         </tr>
       </thead>

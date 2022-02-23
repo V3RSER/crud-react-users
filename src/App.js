@@ -8,6 +8,7 @@ function App() {
   const datosUsuarios = [
     { id: randomID(), nombre: "Luis", nombreUsuario: "V3RSER" },
     { id: randomID(), nombre: "Mary", nombreUsuario: "MaryA_N24" },
+    { id: randomID(), nombre: "Mateo", nombreUsuario: "RuinedKanve323" },
     { id: randomID(), nombre: "Cristian", nombreUsuario: "CristianCT" },
   ];
 
