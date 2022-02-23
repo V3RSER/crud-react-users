@@ -54,6 +54,14 @@ function App() {
     );
   };
 
+  /**
+   * Elimina un usuario que coincida con una id pasada como parámetro.
+   * @param {*} id Id de usuario.
+   */
+  const eliminarUsuario = (id) => {
+    setUsuarios(usuarios.filter((usuario) => usuario.id !== id));
+  };
+
   return (
     <div className="container-fluid">
       <h2 className="text-center my-5">Aplicación CRUD</h2>
@@ -77,7 +85,11 @@ function App() {
         </div>
         <div className="col-md-6">
           <h3>Visualizar usuarios</h3>
-          <TablaUsuario usuarios={usuarios} botonEditar={botonEditar} />
+          <TablaUsuario
+            usuarios={usuarios}
+            botonEditar={botonEditar}
+            eliminarUsuario={eliminarUsuario}
+          />
         </div>
       </div>
     </div>

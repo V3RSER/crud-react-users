@@ -30,7 +30,11 @@ const TablaUsuario = (props) => {
                 >
                   Editar
                 </button>
-                <button type="button" className="btn btn-danger m-1">
+                <button
+                  type="button"
+                  className="btn btn-danger m-1"
+                  onClick={() => props.eliminarUsuario(usuario.id)}
+                >
                   Eliminar
                 </button>
               </td>
