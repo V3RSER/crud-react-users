@@ -2,6 +2,7 @@ import React from "react";
 
 /**
  * Componente tabla de usuario.
+ * @param {*} props Usuarios
  */
 const TablaUsuario = (props) => {
   return (
@@ -17,8 +18,8 @@ const TablaUsuario = (props) => {
         {props.usuarios.length > 0 ? (
           props.usuarios.map((user) => (
             <tr key={user.id}>
-              <td className="align-middle">{user.name}</td>
-              <td className="align-middle">{user.username}</td>
+              <td className="align-middle">{user.nombre}</td>
+              <td className="align-middle">{user.nombreUsuario}</td>
               <td className="text-center">
                 <button type="button" className="btn btn-primary m-1">
                   Editar
